@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>My Feedback Form</h1>
+    <form action="thnks.html" method="get">
+        <div>
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter Name..." required>
+        </div>
+        <br>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter Email..." required>
+        </div>
+        <br>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="pass" placeholder="Enter your password..." required>
+        </div>
+        <br>
+        <div>
+            <label>Please check all the emotions that apply to you:</label>
+            <ul>
+                <li>Angry<input type="checkbox" name="emotion" value="angry"></li>
+                <li>Sad<input type="checkbox" name="emotion" value="sad"></li>
+                <li>Ambivalent<input type="checkbox" name="emotion" value="ambivalent"></li>
+                <li>Happy<input type="checkbox" name="emotion" value="happy"></li>
+            </ul>  
+        </div>
+        <div>
+            <label>How satisfied were you with our service:</label>
+            <ul>
+                <li>Very Satisfied<input type="radio" name="satisfaction" value = "very-satisfied"></li>
+                <li>Satisfied<input type="radio" name="satisfaction" value="satisfied"></li>
+                <li>Didn't care<input type="radio" name="satisfaction" value="didnt_care"></li>
+                <li>Dissatisfied<input type="radio" name="satisfaction" value="dissatisfied"></li>
+                <li>Very dissatisfied<input type="radio" name="satisfaction" value="very_dissatisfied"></li>
+            </ul>
+        </div>
+        <div>
+            <label>Further Comments:</label>
+            <textarea placeholder="Give your thoughts..." wrap></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Bio Photo:</label>
+            <input type="file" accept=".jpg,.png"  = "Choose.." required>
+        </div>
+        <br>
+        <div>
+            <label>Location Visited:</label>
+            <input type="number" placeholder="Location visited" required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" >
+        </div>    
+    </form>
+    
+</body>
+</html>
