@@ -34,10 +34,16 @@
             {
                 let newTask = prompt("Edit Task :",taskText.textContent);
 
-                if()
+                if(newTask != null && newTask != "")
+            {
+                taskText.textContent = newTask;
+            }
+            }
+            function deleteTask(li)
+            {
+                li.remove();
             }
         </script>
-
     </head>
     <body>
         <h1>To-do List</h1>
