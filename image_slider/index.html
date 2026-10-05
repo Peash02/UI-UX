@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            #image
+            {
+                height: 300px;
+                width: 100%;
+                left: 0;
+            }
+        </style>
+
+    </head>
+    <body>
+        <marquee><h2>Image Slider</h2></marquee>
+        <img id="image" src="images/1.jpg">
+        <br><br>
+        <button onclick="previous()">Previous</button>
+        <button onclick="next()">Next</button>
+        <script>
+            let images = ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpeg"];
+            let i = 0;
+            function next()
+            {
+                i++;
+                if(i == images.length)
+                {
+                    i = 0;
+                }
+                document.getElementById("image").src = images[i];
+            }
+            function previous()
+            {
+                i--;
+                if (i < 0)
+            {
+                i = images.length - 1;
+            }
+            document.getElementById("image").src = images[i];
+            }
+
+            setInterval(next,5000);
+        </script>    
+    </body>
+</html>

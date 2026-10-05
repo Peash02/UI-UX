@@ -1,0 +1,42 @@
+body
+{
+    background-color: black;
+    color: white;
+    font-family: 'Satoshi', sans-serif; 
+    line-height: 1.4;
+}
+h1, h2, h3, h4 {
+  font-family: 'Satoshi', serif;
+}
+.line {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.designation {
+    margin-top: 20px;
+    color: #ff6347;
+    font-weight: 550;
+}
+.about {
+    color: #6a99c7;
+    font-weight: 400;
+}
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.marquee
+{
+    color: #0aa08c;
+    margin-bottom: -8px;
+
+}
